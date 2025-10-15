@@ -22,7 +22,12 @@ export default {
           foreground: "hsl(var(--accent-foreground))",
         },
         background: "var(--color-background)",
+        borderPrimary: {
+          DEFAULT: "var(--color-borderPrimary)",
+          foreground: "hsl(var(--borderPrimary-foreground))",
+        },
         text: "var(--color-text)",
+        textPrimary: "var(--color-textPrimary)",
 
         // Extended shadcn-style colors
         foreground: "hsl(var(--foreground))",
