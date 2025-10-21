@@ -115,6 +115,7 @@ export default function Device() {
             {/* Settings */}
             <Card className="text-left">
               <h3 className="text-sm text-slate-300 font-medium">SETTINGS</h3>
+              <div className="border-t border-[#1f2735] mt-2"></div>
               <div className="mt-3">
                 <input
                   className="w-full bg-[#051a1d] border border-[#0e2f37] rounded px-3 py-2 text-sm outline-none placeholder:text-slate-500"
@@ -129,6 +130,9 @@ export default function Device() {
           {/* Command (Top right) */}
           <Card className="lg:col-span-4 text-left">
             <h3 className="text-sm text-slate-300 font-medium mb-3">COMMAND</h3>
+
+              <div className="border-t border-[#1f2735] mb-2"></div>
+
             <div className="space-y-3 text-sm">
               {command.map((a) => (
                 <div key={a.title} className="flex flex-col">
@@ -146,6 +150,9 @@ export default function Device() {
               <h3 className="text-sm text-slate-300 font-medium">
                 CONNECTIONS
               </h3>
+
+              <div className="border-t border-[#1f2735] mt-2"></div>
+
               <ul className="mt-4 space-y-3 text-sm">
                 {connections.map((c) => (
                   <li
@@ -163,7 +170,9 @@ export default function Device() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-4">
+              <div className="border-t border-[#1f2735] mt-4"></div>
+
+              <div className="mt-4 ">
                 <div className="text-xs text-slate-400 mb-2 ">Network</div>
                 <div className="w-full h-12">
                   <Sparkline data={sparkData.medium} height={48} animated />
@@ -176,6 +185,9 @@ export default function Device() {
               <h3 className="text-sm text-slate-300 font-medium mb-3">
                 COMMAND
               </h3>
+
+              <div className="border-t border-[#1f2735] mb-2"></div>
+
               <div className="flex flex-col gap-3">
                 <div className="relative">
                   <input
@@ -188,6 +200,7 @@ export default function Device() {
                 </div>
 
                 <div className="text-sm text-slate-200 mt-2">restart POS</div>
+                 <div className="border-t border-[#1f2735] mb-2"></div>
                 <div className="text-xs text-slate-400">Logs</div>
 
                 <div className="text-sm text-slate-200 mt-3">restart POS</div>
@@ -200,6 +213,7 @@ export default function Device() {
               <h3 className="text-sm text-slate-300 font-medium mb-3">
                 AUDIT & LOGS
               </h3>
+              <div className="border-t border-[#1f2735] mb-2"></div>
               <div className="space-y-3 text-sm">
                 {audit.map((a) => (
                   <div key={a.title} className="flex flex-col">
@@ -213,10 +227,16 @@ export default function Device() {
             {/* Monitoring */}
             <Card>
               <h3 className="text-sm text-slate-300 font-medium">MONITORING</h3>
+
+              <div className="border-t border-[#1f2735] mt-2"></div>
+
               <div className="mt-3 text-sm text-slate-200">Uptime</div>
               <div className="mt-2">
                 <Sparkline data={[8, 10, 12, 10, 14, 16, 18]} height={48} />
               </div>
+
+              <div className="border-t border-[#1f2735] mt-2"></div>
+
               <div className="mt-3 text-sm text-slate-200">Alerts</div>
               <div className="mt-2">
                 <Sparkline data={[4, 6, 5, 6, 7, 6, 8]} height={48} />
@@ -243,7 +263,8 @@ function Card({ children, className = "" }) {
 function LargeCard({ children, className = "" }) {
   return (
     <div
-      className={`bg-gradient-to-b from-[#072026] to-[#04181b] border border-[#103237] rounded-2xl p-4 shadow-[0_8px_30px_rgba(2,136,153,0.06)] ${className}`}
+      // className={`bg-gradient-to-b from-[#072026] to-[#04181b] border border-[#103237] rounded-2xl p-4 shadow-[0_8px_30px_rgba(2,136,153,0.06)] ${className}`}
+      className={` border border-[#103237] rounded-2xl p-4 shadow-[0_8px_30px_rgba(2,136,153,0.06)] ${className}`}
     >
       {children}
     </div>
