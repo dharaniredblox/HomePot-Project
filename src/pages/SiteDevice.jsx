@@ -221,9 +221,9 @@ export default function SiteDeviceScreen() {
               <AndroidIcon />
             </div>
 
-            <div className="flex items-center gap-2 border border-[#1f2735] rounded-md p-2 mt-2 sm:mt-0">
+            {/* <div className="flex items-center gap-2 border border-[#1f2735] rounded-md p-2 mt-2 sm:mt-0">
               <Wave />
-            </div>
+            </div> */}
           </div>
         </div>
 

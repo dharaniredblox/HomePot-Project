@@ -189,7 +189,7 @@ export default function Dashboard() {
                   // className="p-3 rounded-xl border border-gray-700 bg-gray-800 hover:border-green-400 transition"
                 >
                   <div className="flex justify-between items-center">
-                    <h3 className="text-md font-semibold">{s.site}</h3>
+                    <h3 className="text-md text-text font-semibold">{s.site}</h3>
                     {s.icon}
                   </div>
                   <p className="text-sm text-green-400">{s.online} Online</p>
